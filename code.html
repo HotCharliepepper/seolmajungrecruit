@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>설마중 조리부 채용 - Seolmajung Culinary Recruitment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4e4542",
+                        "tertiary": "#000000",
+                        "on-primary-fixed-variant": "#4f4541",
+                        "deep-burgundy": "#4a1817",
+                        "on-primary-container": "#8e817d",
+                        "on-tertiary-fixed-variant": "#673c17",
+                        "surface-container-high": "#ece8e0",
+                        "secondary-fixed-dim": "#f2bd76",
+                        "background": "#fdf9f1",
+                        "surface-container-highest": "#e6e2da",
+                        "primary-fixed": "#efdfda",
+                        "on-tertiary-fixed": "#2f1500",
+                        "surface-container-lowest": "#ffffff",
+                        "warm-beige": "#fffaf2",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#f8b98a",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f7f3eb",
+                        "on-tertiary-container": "#ae784e",
+                        "surface-container": "#f1ede6",
+                        "secondary-fixed": "#ffddb4",
+                        "on-background": "#1c1c17",
+                        "surface-bright": "#fdf9f1",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdcc4",
+                        "inverse-on-surface": "#f4f0e8",
+                        "outline": "#807571",
+                        "on-surface": "#1c1c17",
+                        "surface-tint": "#675c58",
+                        "surface": "#fdf9f1",
+                        "on-secondary": "#ffffff",
+                        "muted-gold": "#dcc9af",
+                        "primary-fixed-dim": "#d3c3be",
+                        "inverse-primary": "#d3c3be",
+                        "surface-dim": "#dddad2",
+                        "on-secondary-fixed-variant": "#633f00",
+                        "surface-variant": "#e6e2da",
+                        "on-secondary-container": "#795214",
+                        "text-description": "#655850",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#d1c4bf",
+                        "secondary-container": "#fec880",
+                        "tertiary-container": "#2f1500",
+                        "ivory-white": "#fffdf8",
+                        "on-secondary-fixed": "#291800",
+                        "primary-container": "#221a17",
+                        "on-primary-fixed": "#221a17",
+                        "inverse-surface": "#31302b",
+                        "secondary": "#7e5719",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "1.5rem",
+                        "grid-gutter": "1rem",
+                        "margin-mobile": "1rem",
+                        "card-padding": "1.5rem",
+                        "section-gap": "2.5rem",
+                        "container-max": "860px"
+                    },
+                    "fontFamily": {
+                        "hero-title-mobile": ["hankenGrotesk"],
+                        "eyebrow": ["hankenGrotesk"],
+                        "section-title": ["hankenGrotesk"],
+                        "card-heading": ["hankenGrotesk"],
+                        "body-main": ["hankenGrotesk"],
+                        "hero-title": ["hankenGrotesk"],
+                        "label-sm": ["hankenGrotesk"]
+                    },
+                    "fontSize": {
+                        "hero-title-mobile": ["28px", { "lineHeight": "1.2", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "eyebrow": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.12em", "fontWeight": "800" }],
+                        "section-title": ["28px", { "lineHeight": "1.3", "letterSpacing": "-0.055em", "fontWeight": "800" }],
+                        "card-heading": ["20px", { "lineHeight": "1.4", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-main": ["15px", { "lineHeight": "1.6", "letterSpacing": "-0.035em", "fontWeight": "400" }],
+                        "hero-title": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.06em", "fontWeight": "800" }],
+                        "label-sm": ["13px", { "lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; }
+        .glass-panel {
+            background: rgba(34, 26, 23, 0.6);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
+        .warm-shadow {
+            box-shadow: 0 10px 25px -5px rgba(64,42,24,.08), 0 8px 10px -6px rgba(64,42,24,.04);
+        }
+        .image-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-background/80 dark:bg-background/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 flat no shadows flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-[860px] mx-auto w-full">
+<div class="font-hero-title text-hero-title-mobile tracking-tighter text-primary dark:text-on-primary">
+            Seolmajung
+        </div>
+<div class="hidden md:flex gap-6 items-center font-label-sm text-label-sm uppercase tracking-widest text-primary dark:text-on-primary">
+<a class="text-text-description dark:text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#benefits">Benefits</a>
+<a class="text-text-description dark:text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#positions">Positions</a>
+<a class="text-text-description dark:text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#process">Process</a>
+<a class="bg-primary text-on-primary px-4 py-2 rounded-full hover:bg-secondary transition-colors duration-300" href="#apply">Apply Now</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</nav>
+<!-- Main Content Container -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 space-y-section-gap">
+<!-- 1. Hero Section -->
+<section class="relative w-full h-[500px] md:h-[600px] rounded-[24px] overflow-hidden warm-shadow flex flex-col justify-end p-8">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe6qnzFxrI5DdGBUuABOUE4-_NkkEWiAFM_uqATiZdb_Ftj5fWatCeEbynpumJulIpQQDdBTCQI4eWOxqJgX7iSBmeZ7WR9IL2zM-YfT6LSp-MmmP3U5MOmCTxuun2aBGGDnxN-c6fS2K2peyRCngz1Fq_s4yAv0_sl9glUvPMDAhs51s0SxppY6LCr0DT_tPYaiVIJt9fh5cTpP4SMAoEkyZKlgVhC7Z0qw-Mm2R-HxXs065V32n3-7-wxaoS4yEliQ"/>
+<div class="absolute inset-0 image-overlay"></div>
+<div class="relative z-10 glass-panel p-6 rounded-xl border border-white/10 max-w-lg">
+<h1 class="font-hero-title text-hero-title-mobile md:text-hero-title text-white mb-4">
+                    설마중의 맛을 함께 완성할 조리부를 찾습니다
+                </h1>
+<p class="font-body-main text-body-main text-surface-container-highest">
+                    시그니처 생갈비는 주방의 기준에서 시작됩니다
+                </p>
+</div>
+</section>
+<!-- 2. Core Benefits -->
+<section class="space-y-6" id="benefits">
+<div class="text-center">
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest">Benefits</span>
+<h2 class="font-section-title text-section-title text-primary mt-2">조리부 핵심 혜택</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<!-- Benefit Card 1 -->
+<div class="bg-ivory-white rounded-xl p-4 border border-outline-variant/40 warm-shadow flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-sm text-label-sm text-on-surface">주 5일 근무</span>
+</div>
+<!-- Benefit Card 2 -->
+<div class="bg-ivory-white rounded-xl p-4 border border-outline-variant/40 warm-shadow flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface">브레이크 2시간</span>
+</div>
+<!-- Benefit Card 3 -->
+<div class="bg-ivory-white rounded-xl p-4 border border-outline-variant/40 warm-shadow flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="font-label-sm text-label-sm text-on-surface">식사 제공</span>
+</div>
+<!-- Benefit Card 4 -->
+<div class="bg-ivory-white rounded-xl p-4 border border-outline-variant/40 warm-shadow flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">checkroom</span>
+<span class="font-label-sm text-label-sm text-on-surface">유니폼 제공</span>
+</div>
+<!-- Benefit Card 5 -->
+<div class="bg-ivory-white rounded-xl p-4 border border-outline-variant/40 warm-shadow flex flex-col items-center text-center gap-3 md:col-span-1 col-span-2">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">group_add</span>
+<span class="font-label-sm text-label-sm text-on-surface">신입·경력 가능</span>
+</div>
+</div>
+</section>
+<!-- 3. Signature Menu & Standards Section -->
+<section class="grid md:grid-cols-2 gap-8 items-center bg-surface-container-low rounded-[24px] p-6 md:p-10 warm-shadow">
+<div class="order-2 md:order-1 space-y-4">
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest">Our Standard</span>
+<h2 class="font-section-title text-section-title text-primary">단순한 조리를 넘어,<br/>식사의 기준을 만듭니다.</h2>
+<p class="font-body-main text-body-main text-text-description">
+                    설마중의 주방은 타협하지 않는 품질을 추구합니다. 시그니처 생갈비의 완벽한 마블링과 정갈한 한식 찬의 조화는 오직 철저한 준비와 정성에서 비롯됩니다.
+                </p>
+</div>
+<div class="order-1 md:order-2 w-full h-[300px] rounded-[24px] overflow-hidden relative">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0gdhm8niqlSDNQW2dOfyyo_HHiPbVyi0KA9ko2ZdZCtWY_tGtZFlwDGpe23hRLYOnMU1X_p8jmxCUnNJZln6qMGYQJAOJQ9Kv6QC8-SPDc1nq4dQ57PsmHIf_DK3pKV6yQ7P9tG6aDAvyn2hYFqx4gio1uYYJPVO1B-6xXZYJxcdVHY-jpPxDhPnDEb_PSP7GoANQMLFF81IeVHQsNx8LtRwuKDO9j_JUHAPHUH-yejo2P9-mX_CR3bORCPv2TrdbrQ"/>
+</div>
+</section>
+<!-- 4. Real Work Environment Section -->
+<section class="space-y-6">
+<div class="text-center">
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest">Environment</span>
+<h2 class="font-section-title text-section-title text-primary mt-2">프로페셔널 주방 환경</h2>
+</div>
+<div class="relative w-full h-[400px] rounded-[24px] overflow-hidden warm-shadow">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg3f9A4LLOpPXmog8aih6JD9fd0wUm0L1c-YhD5efW-eCndSm5mcPTl4fmuymS9qEH7Kac8r7rWMPsJN8b4HzYB6qayYCCjreM0q2pRMDDryTMj5bl4Lk_y2LIZe-kQNGT9GDgsRtIBZfEDkCSC0q90t0_iD_wlyB9QTQ-AzY9QBDpiRwaZUpuBYrHgLTfofEGDbLdxpYPRduXz6E5bZNyG7wjE9VmgJW-BMicATo_7DpAOf20Wvmp1p6Wn_-0qSWaGQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+<div class="relative z-10 p-8 h-full flex flex-col justify-center max-w-md space-y-4 text-white">
+<h3 class="font-card-heading text-card-heading">주요 업무</h3>
+<ul class="space-y-3 font-body-main text-body-main text-surface-container-high">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-muted-gold text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            신선한 식재료 선별 및 손질
+                        </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-muted-gold text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            시그니처 갈비 정형 및 준비
+                        </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-muted-gold text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            한식 찬 구성 및 플레이팅 보조
+                        </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-muted-gold text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            철저한 위생 및 정돈 유지
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- 5. Values & Meaning Section -->
+<section class="grid md:grid-cols-2 gap-8 items-center">
+<div class="w-full h-[400px] rounded-[24px] overflow-hidden relative warm-shadow">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd9MPRtKjQB1b8J88Bqb31vuhg92hzKqrMCpiGtSTXDYGzf66bjD8gPnZs_F1etQj-LDvKIzOcKvkyRO_URbBFey2SlQUE63Y7ImUFqC8nKspWPoWMBtEz5tiEmeqAPtgvpAX7KLI3WKSw-ea36kaE_nXq1tk9g3DIfhpCjLTTxc7n5CtGcPfxqpZamzfvVsblzZKbEEHt96NynGqwsPiW6kX_u2mrhbCpr1sQLNCjkWdQrhn2PdWbXFqCKse587ouzw"/>
+</div>
+<div class="space-y-4 pl-4 border-l-2 border-secondary">
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest">Our Value</span>
+<h2 class="font-section-title text-section-title text-primary">우리의 노력이 고객의 가장 중요한 식사 자리와 연결됩니다.</h2>
+<p class="font-body-main text-body-main text-text-description">
+                    가족 모임, 생일 연회, 중요한 비즈니스 미팅까지. 주방에서 시작된 작은 정성이 고객에게는 잊지 못할 특별한 순간으로 완성됩니다.
+                </p>
+</div>
+</section>
+<!-- 6. Placeholders -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Placeholder 1 -->
+<div class="bg-surface-container-high border-2 border-dashed border-outline-variant/60 rounded-xl h-48 flex items-center justify-center p-4 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">대표 조리 메뉴 이미지 예정<br/><span class="text-xs opacity-70">(갈비찜 / 대표 메뉴 촬영 후 교체 예정)</span></span>
+</div>
+<!-- Placeholder 2 -->
+<div class="bg-surface-container-high border-2 border-dashed border-outline-variant/60 rounded-xl h-48 flex items-center justify-center p-4 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">정돈된 주방 이미지 예정<br/><span class="text-xs opacity-70">(위생 · 정리 · 기준 촬영 후 교체 예정)</span></span>
+</div>
+<!-- Placeholder 3 -->
+<div class="bg-surface-container-high border-2 border-dashed border-outline-variant/60 rounded-xl h-48 flex items-center justify-center p-4 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">새 유니폼 &amp; 근무 장면<br/><span class="text-xs opacity-70">(리뉴얼 후 실제 촬영 이미지로 교체 예정)</span></span>
+</div>
+</section>
+<!-- 7. Recruitment Details & 8. CTA -->
+<section class="bg-ivory-white rounded-[24px] border border-outline-variant/30 warm-shadow overflow-hidden" id="positions">
+<div class="p-8 md:p-12 space-y-8">
+<div class="border-b border-outline-variant/30 pb-8">
+<h3 class="font-card-heading text-card-heading text-primary mb-4">모집 분야</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-primary text-on-primary px-4 py-1.5 rounded-full font-label-sm text-label-sm">조리부</span>
+<span class="bg-secondary text-on-secondary px-4 py-1.5 rounded-full font-label-sm text-label-sm">조리보조</span>
+<span class="bg-secondary text-on-secondary px-4 py-1.5 rounded-full font-label-sm text-label-sm">주방보조</span>
+</div>
+</div>
+<div class="border-b border-outline-variant/30 pb-8">
+<h3 class="font-card-heading text-card-heading text-primary mb-4">이런 분을 기다립니다</h3>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">done</span>
+<span class="font-body-main text-body-main text-on-surface">정리정돈을 좋아하는 분</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">done</span>
+<span class="font-body-main text-body-main text-on-surface">반복 작업을 성실히 하는 분</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">done</span>
+<span class="font-body-main text-body-main text-on-surface">위생 기준을 중요하게 생각하는 분</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">done</span>
+<span class="font-body-main text-body-main text-on-surface">한식 다이닝에서 성장하고 싶은 분</span>
+</div>
+</div>
+</div>
+<div class="border-b border-outline-variant/30 pb-8" id="process">
+<h3 class="font-card-heading text-card-heading text-primary mb-6">채용 절차</h3>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative before:hidden md:before:block before:absolute before:top-1/2 before:left-0 before:w-full before:h-0.5 before:bg-outline-variant/30 before:-z-10">
+<div class="bg-ivory-white p-2 flex flex-col items-center gap-2 w-full md:w-auto text-center">
+<span class="bg-accent-brown bg-secondary text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">1</span>
+<span class="font-label-sm text-label-sm text-on-surface">서류 접수</span>
+</div>
+<div class="bg-ivory-white p-2 flex flex-col items-center gap-2 w-full md:w-auto text-center">
+<span class="bg-accent-brown bg-secondary text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface">면접</span>
+</div>
+<div class="bg-ivory-white p-2 flex flex-col items-center gap-2 w-full md:w-auto text-center">
+<span class="bg-accent-brown bg-secondary text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">3</span>
+<span class="font-label-sm text-label-sm text-on-surface">최종 안내</span>
+</div>
+<div class="bg-ivory-white p-2 flex flex-col items-center gap-2 w-full md:w-auto text-center">
+<span class="bg-accent-brown bg-secondary text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">4</span>
+<span class="font-label-sm text-label-sm text-on-surface text-primary font-bold">근무 시작</span>
+</div>
+</div>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center" id="apply">
+<button class="bg-deep-burgundy text-white font-card-heading text-card-heading px-8 py-4 rounded-xl hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 warm-shadow">
+                        잡코리아로 지원하기
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="bg-surface-container text-on-surface font-card-heading text-card-heading px-8 py-4 rounded-xl border border-outline-variant/40 hover:bg-surface-variant transition-all flex items-center justify-center gap-2">
+                        이메일 지원하기
+                        <span class="material-symbols-outlined text-lg">mail</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-primary-container full-width py-section-gap mt-12 bg-surface-container-low dark:bg-primary-container flat no shadows flex flex-col items-center justify-center text-center px-margin-mobile max-w-[860px] mx-auto w-full transition-all duration-200">
+<div class="font-section-title text-section-title text-primary dark:text-on-primary mb-4">
+            Seolmajung
+        </div>
+<div class="flex gap-4 font-body-main text-body-main text-text-description mb-6">
+<a class="hover:text-secondary underline decoration-secondary" href="#">Privacy Policy</a>
+<a class="hover:text-secondary underline decoration-secondary" href="#">Terms of Service</a>
+<a class="hover:text-secondary underline decoration-secondary" href="#">Contact Us</a>
+</div>
+<div class="font-body-main text-body-main text-text-description text-sm opacity-80">
+            © 2024 Seolmajung Premium Korean Dining. All Rights Reserved.
+        </div>
+</footer>
+</body></html>
