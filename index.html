@@ -159,8 +159,7 @@
             min-height: 100vh;
         }
         .hero-overlay {
-            /* 실제 현장 사진 위 텍스트 가독성을 위해 좌측만 깊게 어둡게 처리했습니다. */
-            background: linear-gradient(to right, rgba(39, 19, 16, 0.96) 0%, rgba(39, 19, 16, 0.84) 34%, rgba(39, 19, 16, 0.45) 58%, rgba(39, 19, 16, 0.10) 100%);
+            background: linear-gradient(to right, rgba(39, 19, 16, 0.8) 0%, rgba(39, 19, 16, 0.5) 50%, rgba(39, 19, 16, 0) 100%);
         }
         .gold-line {
             height: 1px;
@@ -181,25 +180,25 @@
 </head>
 <body class="antialiased text-on-surface">
 <div class="container-base relative pb-20">
-<!-- Hero Section: 텍스트가 박힌 생성 이미지를 제거하고, 실제 설마중 카운터 원본 사진을 배경으로 사용합니다. -->
+<!-- Hero Section -->
 <header class="relative w-full h-[600px]">
-<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/seolmajung_counter_raw.png'); background-position: center 44%;"></div>
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB31Qw7fO0DdbYiAFwdBAP4SWPxgBVsoAO2P1onOsI4OwS8ryKZpCRaGSKEkNJto2SHAV_9ZA3eaAoUVP-ay1stLfV-LhhFIaSq1r3N9i3n-7KbQqSOrfwKdEhTgi5jG_G5ShCyDMdSOgunlgcdLtVuLInwTIMsCaHl2rIU3kC7K40jgTsMrTdmNoTRzg5CPjjGB0ZC0c3Q9NMvo_MnTJQou-riCD5Uh0Ojr3GHC2LOuPkzzAz28H0j');"></div>
 <div class="absolute inset-0 hero-overlay"></div>
 <div class="absolute inset-y-0 left-0 flex flex-col justify-center w-full p-edge-margin text-on-primary">
-<div class="max-w-[560px]">
-<div class="text-label-sm font-label-sm font-bold tracking-widest text-tertiary-fixed-dim uppercase mb-4">
+<div class="max-w-2xl">
+<div class="text-label-sm font-label-sm font-bold tracking-widest text-tertiary-fixed-dim mb-4">
                         영업부 · 예약·고객 안내팀 채용
                     </div>
-<h1 class="text-display font-display mb-stack-sm leading-tight">
-                        설마중의 <br>첫 안내를 정돈할 <br> 예약·고객 안내팀을<br/>찾습니다
+<h1 class="text-[40px] font-display mb-stack-sm leading-tight font-[760]">
+                        예약과 고객 안내를<br/>차분히 정돈할 분을<br/>찾습니다
                     </h1>
 <p class="text-body-lg font-body-lg text-surface-container-highest opacity-90 mb-stack-lg">
                         전화 한 통, 예약 확인, 카운터 응대까지.<br/>고객이 설마중을 처음 안심하는 순간을 함께 만듭니다.
                     </p>
 <div class="flex flex-wrap gap-3">
-<span class="inline-block px-4 py-1.5 rounded-full border border-tertiary-fixed-dim/40 text-tertiary-fixed text-sm font-medium bg-primary/30 backdrop-blur-sm">주 5일 근무</span>
-<span class="inline-block px-4 py-1.5 rounded-full border border-tertiary-fixed-dim/40 text-tertiary-fixed text-sm font-medium bg-primary/30 backdrop-blur-sm">급여 280만원~</span>
-<span class="inline-block px-4 py-1.5 rounded-full border border-tertiary-fixed-dim/40 text-tertiary-fixed text-sm font-medium bg-primary/30 backdrop-blur-sm">브레이크타임 2시간</span>
+<span class="inline-block px-4 py-1.5 rounded-full border border-tertiary-fixed-dim/40 text-tertiary-fixed text-sm font-medium bg-primary/20 backdrop-blur-sm">주 5일 근무</span>
+<span class="inline-block px-4 py-1.5 rounded-full border border-tertiary-fixed-dim/40 text-tertiary-fixed text-sm font-medium bg-primary/20 backdrop-blur-sm">급여 280만원~</span>
+<span class="inline-block px-4 py-1.5 rounded-full border border-tertiary-fixed-dim/40 text-tertiary-fixed text-sm font-medium bg-primary/20 backdrop-blur-sm">브레이크타임 2시간</span>
 </div>
 </div>
 </div>
@@ -208,7 +207,7 @@
 <!-- Benefits -->
 <section class="mb-section-gap" id="benefits">
 <div class="flex items-center gap-4 mb-stack-lg">
-<h2 class="text-headline-md font-headline-md text-primary">Benefits</h2>
+<h2 class="text-headline-md font-headline-md text-primary">핵심 근무조건</h2>
 <div class="flex-grow gold-line"></div>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -230,7 +229,7 @@
 </div>
 <div class="card-border bg-surface-container-lowest p-6 flex flex-col items-center justify-center text-center rounded hover:bg-surface transition-colors">
 <span class="material-symbols-outlined text-tertiary-fixed-dim text-3xl mb-3 font-light">group</span>
-<span class="text-body-md font-body-md text-primary">신입·경력 가능</span>
+<span class="text-body-md font-body-md text-primary">신입·경력 무관</span>
 </div>
 </div>
 </section>
@@ -250,7 +249,7 @@
 <div class="hidden md:block w-px h-24 bg-outline-variant/30"></div>
 <div class="text-center w-full">
 <span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl mb-2" style="font-variation-settings: 'FILL' 0;">coffee</span>
-<div class="text-label-sm font-label-sm text-secondary mb-1">브레이크타임</div>
+<div class="text-label-sm font-label-sm text-secondary mb-1">휴게 및 재정비</div>
 <div class="text-5xl font-display text-primary font-bold">2h</div>
 </div>
 <div class="hidden md:block w-px h-24 bg-outline-variant/30"></div>
@@ -268,7 +267,7 @@
 <!-- Service Flow & Positions -->
 <section class="mb-section-gap" id="roles">
 <div class="flex items-center gap-4 mb-stack-lg">
-<h2 class="text-headline-md font-headline-md text-primary">Service Flow &amp; Positions</h2>
+<h2 class="text-headline-md font-headline-md text-primary">고객 안내 흐름과 모집 분야</h2>
 <div class="flex-grow gold-line"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
@@ -305,39 +304,39 @@
 <!-- Positions & Qualifications -->
 <div class="md:col-span-12 grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div class="bg-surface-container/30 p-8 rounded border border-outline-variant/20">
-<h2 class="text-headline-md font-headline-md text-primary mb-stack-md">Positions</h2>
+<h2 class="text-headline-md font-headline-md text-primary mb-stack-md">모집 분야</h2>
 <ul class="space-y-4">
 <li class="flex items-start">
 <span class="list-marker">■</span>
 <div>
 <h4 class="text-body-md font-body-md font-semibold text-primary">영업부 홀서비스</h4>
-<p class="text-sm text-secondary mt-1">고객 응대, 서비스 품질 관리, 홀-카운터 소통.</p>
+<p class="text-sm text-secondary mt-1">고객 응대, 서비스 품질 관리, 홀-카운터 소통을 담당합니다.</p>
 </div>
 </li>
 <li class="flex items-start">
 <span class="list-marker">■</span>
 <div>
 <h4 class="text-body-md font-body-md font-semibold text-primary">고객응대</h4>
-<p class="text-sm text-secondary mt-1">방문 안내, 예약 확인, 문의 응대.</p>
+<p class="text-sm text-secondary mt-1">방문 안내, 예약 확인, 문의 응대를 친절하게 돕습니다.</p>
 </div>
 </li>
 <li class="flex items-start">
 <span class="list-marker">■</span>
 <div>
 <h4 class="text-body-md font-body-md font-semibold text-primary">예약·전화·카운터 안내</h4>
-<p class="text-sm text-secondary mt-1">전화 응대, 예약 확인, 결제 및 안내.</p>
+<p class="text-sm text-secondary mt-1">전화 응대, 예약 확인, 결제 및 전반적인 안내를 맡습니다.</p>
 </div>
 </li>
 </ul>
 </div>
 <div class="bg-surface-container/30 p-8 rounded border border-outline-variant/20">
-<h2 class="text-headline-md font-headline-md text-primary mb-stack-md">Who we want</h2>
+<h2 class="text-headline-md font-headline-md text-primary mb-stack-md">이런 분과 함께하고 싶습니다</h2>
 <ul class="space-y-4">
-<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>차분하게 전화 응대를 할 수 있는 분</li>
-<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>예약 내용을 꼼꼼히 확인하는 분</li>
-<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>고객과 직원 사이의 전달을 놓치지 않는 분</li>
-<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>바쁜 시간에도 말투와 표정을 정돈할 수 있는 분</li>
-<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>중요한 식사 자리를 안내하는 일에 책임감을 느끼는 분</li>
+<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>차분하고 친절하게 전화 응대를 할 수 있는 분</li>
+<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>예약 내용을 꼼꼼하게 확인하는 분</li>
+<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>고객과 동료 사이의 소통을 원활하게 이끄는 분</li>
+<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>바쁜 시간에도 밝은 미소로 응대할 수 있는 분</li>
+<li class="flex items-start text-body-md text-secondary"><span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-lg mt-0.5">check</span>중요한 식사 자리를 정성껏 안내하는 일에 보람을 느끼는 분</li>
 </ul>
 </div>
 </div>
@@ -346,7 +345,7 @@
 <!-- Work Conditions -->
 <section class="mb-section-gap" id="conditions">
 <div class="flex items-center gap-4 mb-stack-lg">
-<h2 class="text-headline-md font-headline-md text-primary">Work Conditions</h2>
+<h2 class="text-headline-md font-headline-md text-primary">근무조건</h2>
 <div class="flex-grow gold-line"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -375,7 +374,7 @@
 <span class="material-symbols-outlined text-tertiary-fixed-dim">star</span>
 <div>
 <h4 class="text-body-md font-bold text-primary">우대사항 및 기타</h4>
-<p class="text-secondary text-sm mt-1">동종업계 경력자 우대, 유니폼 제공</p>
+<p class="text-secondary text-sm mt-1">동종업계 경험자 환영, 깔끔한 유니폼 제공</p>
 </div>
 </div>
 </div>
@@ -383,7 +382,7 @@
 <!-- Process & Apply -->
 <section class="mb-section-gap grid grid-cols-1 md:grid-cols-2 gap-gutter" id="apply">
 <div class="p-8 border border-outline-variant/30 rounded bg-surface">
-<h2 class="text-headline-md font-headline-md text-primary mb-stack-md">Process</h2>
+<h2 class="text-headline-md font-headline-md text-primary mb-stack-md">지원 절차</h2>
 <div class="flex flex-col gap-4">
 <div class="flex items-center">
 <div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-sm mr-4">1</div>
@@ -408,21 +407,19 @@
 </div>
 <div class="p-8 bg-primary text-on-primary rounded flex flex-col justify-between">
 <div>
-<h2 class="text-headline-md font-headline-md mb-2">Apply Now</h2>
-<p class="text-on-primary/80 text-sm mb-8">설마중의 첫 안내를 함께 정돈할 분을 기다립니다.</p>
+<h2 class="text-headline-md font-headline-md mb-2">지원 방법</h2>
+<p class="text-on-primary/80 text-sm mb-8">고객에게 따뜻한 첫인상을 남겨주실 분을 기다립니다.</p>
 <div class="space-y-4">
 <div class="flex items-center gap-3 border-b border-on-primary/20 pb-2"><span class="material-symbols-outlined text-tertiary-fixed-dim font-light text-xl">mouse</span><span class="text-body-md">잡코리아 온라인 지원</span></div>
 <div class="flex items-center gap-3 border-b border-on-primary/20 pb-2"><span class="material-symbols-outlined text-tertiary-fixed-dim font-light text-xl">mail</span><span class="text-body-md">이메일 지원: seolmajung@naver.com</span></div>
 <div class="flex items-center gap-3 border-b border-on-primary/20 pb-2"><span class="material-symbols-outlined text-tertiary-fixed-dim font-light text-xl">phone</span><span class="text-body-md">문의: 02-3462-8888</span></div>
 </div>
 </div>
-<button class="w-full mt-8 bg-tertiary-fixed-dim text-primary py-4 rounded font-bold text-label-sm tracking-wide hover:opacity-90 transition-opacity">
+<button class="w-full mt-8 bg-error text-on-error py-4 rounded font-bold text-label-sm tracking-wide hover:bg-error/90 transition-colors">
                         잡코리아로 지원하기
                     </button>
 </div>
 </section>
 </main>
 </div>
-
-<!-- 메모: Netlify에서는 Tailwind CDN이 동작합니다. 잡코리아 에디터에 삽입할 경우 script가 차단될 수 있으므로 최종 등록 전 순수 CSS 버전으로 변환하는 것이 안전합니다. -->
 </body></html>
