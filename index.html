@@ -176,13 +176,24 @@
             font-size: 8px;
             vertical-align: middle;
         }
+
+        /* 실제 세로 사진을 히어로 배경으로 사용할 때 모바일에서 로고/카운터가 덜 잘리도록 위치를 조정합니다. */
+        @media (max-width: 760px) {
+            .hero-bg-photo {
+                background-position: center 38% !important;
+            }
+        }
     </style>
 </head>
 <body class="antialiased text-on-surface">
 <div class="container-base relative pb-20">
-<!-- Hero Section -->
+<!-- Hero Section
+     - 히어로 사진은 assets/seolmajung_counter_raw.png 를 사용합니다.
+     - GitHub/Netlify 업로드 시 index.html과 assets 폴더를 같은 루트에 올려야 사진이 노출됩니다.
+     - 잡코리아에 삽입할 때는 이 상대경로를 잡코리아에 업로드한 이미지 URL로 교체해야 합니다.
+-->
 <header class="relative w-full h-[600px]">
-<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB31Qw7fO0DdbYiAFwdBAP4SWPxgBVsoAO2P1onOsI4OwS8ryKZpCRaGSKEkNJto2SHAV_9ZA3eaAoUVP-ay1stLfV-LhhFIaSq1r3N9i3n-7KbQqSOrfwKdEhTgi5jG_G5ShCyDMdSOgunlgcdLtVuLInwTIMsCaHl2rIU3kC7K40jgTsMrTdmNoTRzg5CPjjGB0ZC0c3Q9NMvo_MnTJQou-riCD5Uh0Ojr3GHC2LOuPkzzAz28H0j');"></div>
+<div class="absolute inset-0 bg-cover bg-center hero-bg-photo" style="background-image: url('assets/seolmajung_counter_raw.png'); background-position:center 44%;"></div>
 <div class="absolute inset-0 hero-overlay"></div>
 <div class="absolute inset-y-0 left-0 flex flex-col justify-center w-full p-edge-margin text-on-primary">
 <div class="max-w-2xl">
